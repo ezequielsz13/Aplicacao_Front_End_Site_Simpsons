@@ -1,0 +1,231 @@
+/* ---------- Área global ---------- */
+*{
+    margin: 0px;
+	padding: 0px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.content-auto-height {
+    min-height: 100px;
+    overflow: hidden; /* Estouro da caixa */
+}
+
+.content-default {
+    width: 90vw;
+    margin: auto;
+}
+
+p{
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- CABEÇALHO ---------- */
+
+header{
+    height: 70px;
+    background-color: rgba(6, 20, 27, 0.6);
+    margin-bottom: 40px;
+    position: sticky; /*Fixa a seção na tela */
+    top: 0px;
+}
+
+#itens-header{
+    align-items: center;
+    margin: auto; /*Centralizar a div*/ 
+    width: 80%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+header img{
+    height: 70px;
+}
+
+header nav ul {
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+#img-header{
+    max-width: 255px;
+    height: 70px;
+}
+
+#menu-header{
+    width: 500px;
+}
+
+header nav ul a {
+    /*min-width: 150px;*/
+    height: 60px;
+    margin-right: 20px;
+    font-family: 'Segoe UI';
+    font-size: 1.0rem;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+header nav ul a:hover{
+    background-color: #40FDA0;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* ----------  CONTEÚDOS ---------- */
+
+body{
+    background-color: #9999FF;
+}
+
+.caixa-secao {
+    width: 90%;
+    height: auto;
+    background-color:#DDFFFF;
+    margin: auto;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 50px #0099FF;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.caixa-secao h2{
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+}
+
+.referencia {
+    font-size: 0.7em;
+    text-align: right;
+    color: rgba(20, 20, 20, 0.6);
+}
+
+.referencia a{
+    font-size: 0.9em;
+    text-align: right;
+    color: rgba(20, 20, 20, 0.6);
+}
+
+/* Seção Sobre os Simpsons */
+
+#sobreSimpsons{
+    /*background-image: linear-gradient(to top left, rgba(187, 221, 255, 0.5), rgba(187, 221, 255, 1)), url(../img/Background/Simpsons.jpg);*/
+    background-image: linear-gradient(to left, rgba(187, 221, 255, 0.8), rgba(187, 221, 255, 0.9)), url(../img/Background/Simpsons.jpg);
+    background-size: cover;
+    background-position-y: 20%;
+}
+
+/* Seção de Melhores Episódios */
+
+#episodios{
+    background-image: linear-gradient(to top left, rgba(187, 221, 255, 0.5), rgba(187, 221, 255, 1)), url(../img/Background/the-simpsons-santa-s-little-helper-tng9g2yplu92mqk3-3020026433.jpg);
+    background-size: cover;
+    background-position-y: 40%;
+}
+
+/* Seção de Assistir os Simpsons */
+
+#assistir{
+    background-image: linear-gradient(to top left, rgba(187, 221, 255, 0.7), rgba(187, 221, 255, 1)), url(../img/Background/Assistir.jpg);
+    background-size: cover;
+    background-position-y: 45%;
+}
+
+#conteudoAssistir{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#conteudoAssistir img{
+    height: 100px;
+    border-radius: 20%;
+}
+
+/* Seção da lista de personagens */
+
+#listPersonagens{
+    background-image: linear-gradient(to top left, rgba(187, 221, 255, 0.7), rgba(187, 221, 255, 1)), url(../img/Background/Characters.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#listDados {
+    width: 100%;
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 3%;
+    grid-column-gap: 6%;
+    grid-row-gap: 50px;
+}
+
+#listDados div{
+    padding: 5%;
+    height: auto;
+    background-color: #BBDDFF;
+}
+
+#listDados div img{
+    margin: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.personagem{
+    box-shadow: 0px 0px 10px #0055AA;
+    border-radius: 20px;
+}
+
+.nomePersonagem{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.fotoPersonagem{
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+.descricaoPersonagem{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- RODAPÉ ---------- */
+
+footer{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 1em;
+    color: #BBDDFF;
+    background-color: rgba(6, 20, 27, 0.6);
+    display: flex;
+    justify-content: center;
+}
+
+footer img{
+    height: 60px;
+}
+
+#itensRodape{
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+/*itensRodape*/

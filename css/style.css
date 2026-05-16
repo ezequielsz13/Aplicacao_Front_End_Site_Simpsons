@@ -74,7 +74,7 @@ header nav ul a {
     color: #FFFFFF;
     display: flex;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
     text-decoration: none;
   }
 
@@ -145,7 +145,7 @@ body{
 
 #conteudoAssistir{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 4fr 1fr;
 }
 
 #conteudoAssistir img{

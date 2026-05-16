@@ -3,8 +3,8 @@
  * Data: 11-13/05/2026
  * Versão 1.0
  * Autor: Ezequiel Saldivia Zanotta
- * URL API: https://apisimpsons.fly.dev/api/personajes?limit=1000
- * Tentar URL API: https://apisimpsons.fly.dev/api/personajes?limit=20
+ * URL API original: https://apisimpsons.fly.dev/api/personajes?limit=1000
+ * URL API utilizada, limitando a 20 ítens: https://apisimpsons.fly.dev/api/personajes?limit=20
  **********************************************************************************************/
 
 const setCreateCard = function(listaPersonagens){
